@@ -8,3 +8,4 @@ class Places(models.Model):
    cap:str
    review:int
    days:int
+   offer:bool
