@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="post">
+    <form action="register/" method="post">
         {% csrf_token %}
         <input type="text" name="firstname" id="" placeholder="firstname"><br><br>
         <input type="text" name="lastname" id="" placeholder="lastname"><br><br>
@@ -14,6 +14,14 @@
         <input type="email" name="email" id="" placeholder="email"><br><br>
         <input type="password" name="password1" id="" placeholder="password"><br><br>
         <input type="password" name="password2" id="" placeholder="confirm password"><br><br>
+
+        <input type="submit">
     </form>
+
+    {% for message in messagea %}
+    <div>
+        {{message}}
+    </div>
+    {% endfor %}
 </body>
 </html>
